@@ -268,33 +268,6 @@ function hideArticle() {
   `).join('');
 })();
 
-// ===== Gallery =====
-(function renderGallery() {
-  const images = D().certImages || [];
-  if (images.length === 0) {
-    document.getElementById('galleryContent').innerHTML = '<p class="text-center" style="color:var(--color-text-muted);">暂无证书图片。将图片放入 <strong>Certifications & Awards/</strong> 文件夹，运行 <code>node build.js</code> 即可显示。</p>';
-    return;
-  }
-
-  document.getElementById('galleryContent').innerHTML = images.map(img => `
-    <div class="gallery-item" onclick="openLightbox('${img.path}')">
-      <img src="${img.path}" alt="${img.file}" loading="lazy" />
-    </div>
-  `).join('');
-})();
-
-// Lightbox
-function openLightbox(src) {
-  document.getElementById('lightboxImg').src = src;
-  document.getElementById('lightbox').classList.add('open');
-}
-document.getElementById('lightboxClose').addEventListener('click', () => {
-  document.getElementById('lightbox').classList.remove('open');
-});
-document.getElementById('lightbox').addEventListener('click', function(e) {
-  if (e.target === this) this.classList.remove('open');
-});
-
 // ===== Footer =====
 (function renderFooter() {
   const p = D().profile;
@@ -313,8 +286,7 @@ document.getElementById('lightbox').addEventListener('click', function(e) {
       <h3>快速链接</h3>
       <a href="#publications">论文发表</a>
       <a href="#blog">博客文章</a>
-      <a href="#certifications">证书荣誉</a>
-      <a href="#gallery">证书图集</a>
+      <a href="#certifications">荣誉与经历</a>
     </div>
   `;
 })();
