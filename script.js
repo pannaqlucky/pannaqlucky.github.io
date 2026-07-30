@@ -291,8 +291,8 @@ function hideArticle() {
     </div>
     <div>
       <h3>联系方式</h3>
-      <p>邮箱: ${p.email}</p>
-      <p>ORCID: ${p.orcid}</p>
+      ${(p.emails || []).map(e => `<p>邮箱: ${e}</p>`).join('')}
+      <p>ORCID: <a href="https://orcid.org/${p.orcid}" target="_blank" rel="noopener">${p.orcid}</a></p>
     </div>
     <div>
       <h3>快速链接</h3>

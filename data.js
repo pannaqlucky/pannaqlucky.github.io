@@ -1,6 +1,6 @@
 /**
  * 此文件由 build.js 自动生成，请勿手动编辑。
- * 生成时间：2026-07-30T04:41:33.033Z
+ * 生成时间：2026-07-30T04:56:05.018Z
  *
  * 维护方式：
  *   - 博客文章：编辑 data/blog.json，运行 node build.js
@@ -16,8 +16,12 @@ window.SITE_DATA = {
     "institution": "冈山大学 (Okayama University)",
     "field": "河川工学 × AI 深度学习",
     "location": "深圳 · 中国",
-    "email": "research@example.com",
-    "orcid": "0000-0000-0000-0000",
+    "emails": [
+      "panshj@szarobots.com",
+      "panshj@uestc.edu.cn",
+      "p4b36znn@s.okayama-u.ac.jp"
+    ],
+    "orcid": "0000-0002-3260-9019",
     "tagline": "科研工作者 · 技术经理人 · 终身学习者",
     "bio": [
       "专注于河川工程与人工智能深度学习交叉研究，致力于将前沿AI技术（计算机视觉、多模态大模型、AIGC）应用于河流环境监测与管理。",
@@ -1109,5 +1113,5 @@ window.SITE_DATA = {
       }
     ]
   },
-  "generatedAt": "2026-07-30T04:41:33.033Z"
+  "generatedAt": "2026-07-30T04:56:05.018Z"
 };
