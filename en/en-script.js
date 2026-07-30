@@ -1,27 +1,16 @@
 /**
  * en-script.js — English version interaction script
- * Uses SITE_DATA.profileEN for English content.
  */
+
 function D() { return window.SITE_DATA; }
 
 // ===== Navbar =====
 (function initNavbar() {
-  const ui = D().profileEN.ui || {};
-  document.getElementById('navLinks').innerHTML = `
-    <li><a href="#about">${ui.nav_about || 'About'}</a></li>
-    <li><a href="#research">${ui.nav_research || 'Research'}</a></li>
-    <li><a href="#publications">${ui.nav_pub || 'Publications'}</a></li>
-    <li><a href="#blog">${ui.nav_blog || 'Blog'}</a></li>
-    <li><a href="#certifications">${ui.nav_cert || 'Honors'}</a></li>
-    <li><a href="../">${ui.lang_switch || '中文'}</a></li>
-    <li><a href="#contact">${ui.nav_contact || 'Contact'}</a></li>
-  `;
-
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 10));
 
   const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.getElementById('navLinks');
+  const navLinks = document.querySelector('.nav-links');
   navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => navLinks.classList.remove('open'));
@@ -38,7 +27,6 @@ function D() { return window.SITE_DATA; }
 // ===== Hero =====
 (function renderHero() {
   const p = D().profileEN;
-  const ui = p.ui || {};
   document.getElementById('heroContent').innerHTML = `
     <div class="hero-avatar"><span>${p.name.charAt(0)}</span></div>
     <h1 class="hero-name">${p.name} <span class="hero-name-en">${p.nameEn}</span></h1>
@@ -46,8 +34,8 @@ function D() { return window.SITE_DATA; }
     <p class="hero-institution">${p.institution} — ${p.field}</p>
     <p class="hero-location">${p.location}</p>
     <div class="hero-actions">
-      <a href="#publications" class="btn">${ui.hero_btn_pub || 'Publications'}</a>
-      <a href="#blog" class="btn btn-outline">${ui.hero_btn_blog || 'Read Blog'}</a>
+      <a href="#publications" class="btn">Publications</a>
+      <a href="#blog" class="btn btn-outline">Read Blog</a>
     </div>
     <div class="hero-social">
       <a href="${p.zhihu || '#'}" target="_blank" rel="noopener" class="social-link">Zhihu</a>
@@ -59,21 +47,19 @@ function D() { return window.SITE_DATA; }
 // ===== About =====
 (function renderAbout() {
   const p = D().profileEN;
-  const ui = p.ui || {};
-  document.getElementById('aboutTitle').textContent = ui.section_about || 'About Me';
   document.getElementById('aboutContent').innerHTML = `
     <div class="about-card">
-      <h3>${ui.section_bio || 'Biography'}</h3>
+      <h3>Biography</h3>
       ${p.bio.map(b => `<p>${b}</p>`).join('')}
     </div>
     <div class="about-card">
-      <h3>${ui.section_education || 'Education'}</h3>
+      <h3>Education</h3>
       <ul class="timeline">
         ${p.education.map(e => `<li><span class="tl-year">${e.year}</span><span class="tl-text">${e.degree} — ${e.school}</span></li>`).join('')}
       </ul>
     </div>
     <div class="about-card">
-      <h3>${ui.section_languages || 'Languages'}</h3>
+      <h3>Languages</h3>
       <div class="lang-grid">
         ${p.languages.map(l => `
           <div class="lang-item">
@@ -90,8 +76,6 @@ function D() { return window.SITE_DATA; }
 // ===== Research =====
 (function renderResearch() {
   const p = D().profileEN;
-  const ui = p.ui || {};
-  document.getElementById('researchTitle').textContent = ui.section_research || 'Research Areas';
   document.getElementById('researchContent').innerHTML = p.researchAreas.map(r => `
     <div class="research-card">
       <div class="research-icon">${r.icon}</div>
@@ -103,24 +87,21 @@ function D() { return window.SITE_DATA; }
 
 // ===== Publications =====
 (function renderPublications() {
-  const ui = D().profileEN.ui || {};
   const pub = D().publications;
   const journals = pub.journals || [];
   const conferences = pub.conferences || [];
   const venues = new Set(journals.map(j => j.venue).filter(Boolean));
 
-  document.getElementById('pubTitle').textContent = ui.section_pub || 'Publications';
-
   document.getElementById('pubStats').innerHTML = `
-    <div class="stat-item"><span class="stat-num">${journals.length}</span><span class="stat-label">${ui.section_pub_stats_journals || 'Journal Papers'}</span></div>
-    <div class="stat-item"><span class="stat-num">${conferences.length}</span><span class="stat-label">${ui.section_pub_stats_conferences || 'Conference Papers'}</span></div>
-    <div class="stat-item"><span class="stat-num">${venues.size}+</span><span class="stat-label">${ui.section_pub_stats_venues || 'Venues'}</span></div>
-    <div class="stat-item"><span class="stat-num">${D().profileEN.researchAreas.length}</span><span class="stat-label">${ui.section_pub_stats_fields || 'Fields'}</span></div>
+    <div class="stat-item"><span class="stat-num">${journals.length}</span><span class="stat-label">Journal Papers</span></div>
+    <div class="stat-item"><span class="stat-num">${conferences.length}</span><span class="stat-label">Conference Papers</span></div>
+    <div class="stat-item"><span class="stat-num">${venues.size}+</span><span class="stat-label">Venues</span></div>
+    <div class="stat-item"><span class="stat-num">${D().profileEN.researchAreas.length}</span><span class="stat-label">Fields</span></div>
   `;
 
   document.getElementById('pubTabs').innerHTML = `
-    <button class="pub-tab active" data-tab="journals">${ui.section_pub_journals || 'Journal Papers'} (${journals.length})</button>
-    <button class="pub-tab" data-tab="conferences">${ui.section_pub_conferences || 'Conference Papers'} (${conferences.length})</button>
+    <button class="pub-tab active" data-tab="journals">Journal Papers (${journals.length})</button>
+    <button class="pub-tab" data-tab="conferences">Conference Papers (${conferences.length})</button>
   `;
 
   document.getElementById('journalsList').innerHTML = journals.slice(0, 20).map(j => `
@@ -129,7 +110,7 @@ function D() { return window.SITE_DATA; }
 
   document.getElementById('conferencesList').innerHTML = conferences.slice(0, 20).map(c => `
     <div class="pub-item"><span class="pub-year">${c.year}</span><div class="pub-info"><h4>${c.title}</h4><span class="pub-venue">${c.venue || 'Conference'}</span></div></div>
-  `).join('') + (conferences.length > 20 ? `<div class="pub-item pub-more"><span>... +${conferences.length - 20} more papers</span></div>` : '');
+  `).join('') + (conferences.length > 20 ? `<div class="pub-item pub-more"><span>... +${conferences.length - 20} more</span></div>` : '');
 
   document.querySelectorAll('.pub-tab').forEach(tab => {
     tab.addEventListener('click', () => {
@@ -144,8 +125,6 @@ function D() { return window.SITE_DATA; }
 
 // ===== Timeline =====
 (function renderTimeline() {
-  const ui = D().profileEN.ui || {};
-  document.getElementById('timelineTitle').textContent = ui.section_timeline || 'Research Timeline';
   document.getElementById('timelineContent').innerHTML = (D().profileEN.timeline || []).map(t => `
     <div class="tl-node"><div class="tl-dot"></div><div class="tl-card"><span class="tl-date">${t.date}</span><h4>${t.title}</h4><p>${t.desc}</p></div></div>
   `).join('');
@@ -153,10 +132,6 @@ function D() { return window.SITE_DATA; }
 
 // ===== Blog =====
 (function renderBlog() {
-  const ui = D().profileEN.ui || {};
-  document.getElementById('blogTitle').textContent = ui.section_blog || 'Blog';
-  document.getElementById('blogSubtitle').textContent = ui.section_blog_subtitle || '';
-
   const blog = D().blog || [];
   let html = blog.map(a => `
     <div class="blog-card" onclick="showArticle('${a.id}')">
@@ -182,7 +157,7 @@ function D() { return window.SITE_DATA; }
   document.getElementById('blogGrid').innerHTML = html || '<p class="text-center" style="color:var(--color-text-muted);">No articles yet.</p>';
 })();
 
-// Markdown → HTML (simplified)
+// Markdown → HTML
 function mdToHtml(md) {
   if (!md) return '';
   let html = md.replace(/^### (.+)$/gm, '<h3>$1</h3>').replace(/^## (.+)$/gm, '<h2>$1</h2>').replace(/^# (.+)$/gm, '<h1>$1</h1>')
@@ -214,9 +189,8 @@ function showArticle(id) {
   const display = document.getElementById('blog-display');
   display.style.display = 'block';
   display.scrollIntoView({ behavior: 'smooth' });
-  const ui = D().profileEN.ui || {};
   document.getElementById('blogContent').innerHTML = `
-    <button onclick="hideArticle()" style="background:none;border:none;color:var(--color-primary);cursor:pointer;font-size:0.95rem;margin-bottom:24px;font-family:var(--font-sans);">${ui.blog_back || '← Back to Blog'}</button>
+    <button onclick="hideArticle()" style="background:none;border:none;color:var(--color-primary);cursor:pointer;font-size:0.95rem;margin-bottom:24px;font-family:var(--font-sans);">← Back to Blog</button>
     <div class="blog-card-date">${article.date}</div>
     <h1>${article.title}</h1>
     <div class="blog-tags" style="margin:12px 0 24px;">${article.tags.map(t => `<span class="blog-tag">${t}</span>`).join('')}</div>
@@ -232,9 +206,6 @@ function hideArticle() {
 
 // ===== Certifications =====
 (function renderCerts() {
-  const ui = D().profileEN.ui || {};
-  document.getElementById('certTitle').textContent = ui.section_cert || 'Honors & Experience';
-
   const certs = D().profileEN.certifications || {};
   const entries = Object.entries(certs);
   if (entries.length === 0) {
@@ -242,21 +213,27 @@ function hideArticle() {
     return;
   }
 
-  document.getElementById('certContent').innerHTML = entries.map(([cat, items]) => {
-    const enLabel = (ui.cert_cat_labels || {})[cat] || cat;
-    return `
-      <div class="cert-cat">
-        <h3>${enLabel} <span style="font-size:0.8rem;color:var(--color-text-muted);font-weight:400;">(${items.length})</span></h3>
-        <ul>${items.map(i => `<li>${i.date ? '<small style="color:var(--color-primary);margin-right:6px;">[' + i.date + ']</small>' : ''}${i.display}${i.org ? ' <span style="color:var(--color-text-muted);">— ' + i.org + '</span>' : ''}</li>`).join('')}</ul>
-      </div>
-    `;
-  }).join('');
+  const catLabels = {
+    '学位与学历认证': 'Degrees & Credentials', '奖项与荣誉': 'Awards & Honors',
+    '研究资助与学术活动': 'Research Grants & Activities', '学术服务': 'Academic Service',
+    '语言与计算机考试': 'Language & Computer Exams', '专业技能认证': 'Professional Certifications',
+    '管理培训': 'Management Training', '一带一路专项课程': 'Belt & Road Courses',
+    '前沿科技课程': 'Cutting-Edge Tech', '工程技术认证': 'Engineering Certifications',
+    '高端装备与创新': 'Advanced Equipment & Innovation', '软技能培训': 'Soft Skills',
+    '技术转移与跨境合作': 'Tech Transfer & Cross-border', '其他': 'Other'
+  };
+
+  document.getElementById('certContent').innerHTML = entries.map(([cat, items]) => `
+    <div class="cert-cat">
+      <h3>${catLabels[cat] || cat} <span style="font-size:0.8rem;color:var(--color-text-muted);font-weight:400;">(${items.length})</span></h3>
+      <ul>${items.map(i => `<li>${i.date ? '<small style="color:var(--color-primary);margin-right:6px;">[' + i.date + ']</small>' : ''}${i.display}${i.org ? ' <span style="color:var(--color-text-muted);">— ' + i.org + '</span>' : ''}</li>`).join('')}</ul>
+    </div>
+  `).join('');
 })();
 
 // ===== Footer =====
 (function renderFooter() {
   const p = D().profileEN;
-  const ui = p.ui || {};
   document.getElementById('footerContent').innerHTML = `
     <div>
       <h3>${p.name} (${p.nameEn})</h3>
@@ -264,16 +241,16 @@ function hideArticle() {
       <p>${p.location}</p>
     </div>
     <div>
-      <h3>${ui.section_contact || 'Contact'}</h3>
+      <h3>Contact</h3>
       ${(p.emails || []).map(e => `<p>Email: ${e}</p>`).join('')}
       <p>ORCID: <a href="https://orcid.org/${p.orcid}" target="_blank" rel="noopener">${p.orcid}</a></p>
     </div>
     <div>
-      <h3>${ui.footer_quicklinks || 'Quick Links'}</h3>
-      <a href="#publications">${ui.footer_pub || 'Publications'}</a>
-      <a href="#blog">${ui.footer_blog || 'Blog'}</a>
-      <a href="#certifications">${ui.footer_cert || 'Honors'}</a>
-      ${p.zhihu ? `<a href="${p.zhihu}" target="_blank" rel="noopener">${ui.footer_zhihu || 'Zhihu'}</a>` : ''}
+      <h3>Quick Links</h3>
+      <a href="#publications">Publications</a>
+      <a href="#blog">Blog</a>
+      <a href="#certifications">Honors</a>
+      ${p.zhihu ? `<a href="${p.zhihu}" target="_blank" rel="noopener">Zhihu</a>` : ''}
       <a href="https://orcid.org/${p.orcid}" target="_blank" rel="noopener">ORCID</a>
     </div>
   `;
