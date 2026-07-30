@@ -347,7 +347,7 @@ function scanCertifications(certDir) {
 function main() {
   console.log('🔧 正在构建网站数据...\n');
 
-  let profile, blog;
+  let profile, blog, zhihu = [];
   try {
     profile = readJSON(path.join(ROOT, 'data', 'profile.json'));
     console.log('✓ 已读取 data/profile.json');
@@ -363,6 +363,11 @@ function main() {
     console.error('✗ 读取 data/blog.json 失败:', e.message);
     process.exit(1);
   }
+
+  try {
+    zhihu = readJSON(path.join(ROOT, 'data', 'zhihu.json'));
+    if (zhihu.length > 0) console.log(`✓ 已读取 data/zhihu.json (${zhihu.length} 篇文章)`);
+  } catch (e) { /* zhihu.json optional */ }
 
   const journalsDir = path.join(ROOT, 'Journals');
   const conferencesDir = path.join(ROOT, 'Conferences');
@@ -383,6 +388,7 @@ function main() {
   const data = {
     profile,
     blog,
+    zhihu,
     publications,
     generatedAt: new Date().toISOString()
   };

@@ -43,6 +43,10 @@ function D() { return window.SITE_DATA; }
       <a href="#publications" class="btn">学术论文</a>
       <a href="#blog" class="btn btn-outline">阅读博客</a>
     </div>
+    <div class="hero-social">
+      <a href="${p.zhihu || '#'}" target="_blank" rel="noopener" class="social-link">知乎</a>
+      <a href="https://orcid.org/${p.orcid}" target="_blank" rel="noopener" class="social-link">ORCID</a>
+    </div>
   `;
 })();
 
@@ -166,7 +170,7 @@ function D() { return window.SITE_DATA; }
 (function renderBlog() {
   const blog = D().blog || [];
 
-  document.getElementById('blogGrid').innerHTML = blog.map(a => `
+  let html = blog.map(a => `
     <div class="blog-card" onclick="showArticle('${a.id}')">
       <div class="blog-card-date">${a.date}</div>
       <h4>${a.title}</h4>
@@ -176,6 +180,23 @@ function D() { return window.SITE_DATA; }
       </div>
     </div>
   `).join('');
+
+  // Zhihu articles
+  const zhihu = D().zhihu || [];
+  zhihu.forEach(a => {
+    html += `
+      <div class="blog-card" onclick="window.open('https://zhuanlan.zhihu.com/p/${a.id}', '_blank')">
+        <div class="blog-card-date" style="color:#0084FF;">${a.date || '知乎专栏'}</div>
+        <h4>${a.title || '知乎文章'}</h4>
+        <p>${a.excerpt || '点击查看知乎专栏原文'}</p>
+        <div class="blog-tags">
+          <span class="blog-tag" style="background:#e8f4fd;color:#0084FF;">知乎</span>
+        </div>
+      </div>
+    `;
+  });
+
+  document.getElementById('blogGrid').innerHTML = html || '<p class="text-center" style="color:var(--color-text-muted);">暂无文章。</p>';
 })();
 
 // Simple markdown → HTML converter
@@ -299,6 +320,8 @@ function hideArticle() {
       <a href="#publications">论文发表</a>
       <a href="#blog">博客文章</a>
       <a href="#certifications">荣誉与经历</a>
+      ${p.zhihu ? `<a href="${p.zhihu}" target="_blank" rel="noopener">知乎主页</a>` : ''}
+      <a href="https://orcid.org/${p.orcid}" target="_blank" rel="noopener">ORCID</a>
     </div>
   `;
 })();

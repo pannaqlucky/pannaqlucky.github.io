@@ -275,6 +275,17 @@ img { max-width: 100%; display: block; }
 
 .text-center { text-align: center; }
 
+/* ===== Hero Social Links ===== */
+.hero-social {
+  display: flex; gap: 16px; justify-content: center; margin-top: 16px;
+}
+.social-link {
+  padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;
+  color: var(--color-text-muted); border: 1px solid var(--color-border);
+  transition: all 0.2s;
+}
+.social-link:hover { color: var(--color-primary); border-color: var(--color-primary); }
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
