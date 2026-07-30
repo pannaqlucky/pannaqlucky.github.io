@@ -1,6 +1,6 @@
 /**
  * 此文件由 build.js 自动生成，请勿手动编辑。
- * 生成时间：2026-07-30T05:03:29.776Z
+ * 生成时间：2026-07-30T05:11:52.596Z
  *
  * 维护方式：
  *   - 博客文章：编辑 data/blog.json，运行 node build.js
@@ -122,6 +122,752 @@ window.SITE_DATA = {
         "desc": "ALB辅助深度学习、河岸土地覆盖分类、鱼道鱼类检测"
       }
     ],
+    "certifications": {
+      "技术转移与跨境合作": [
+        {
+          "display": "培训出席证书",
+          "date": "2026年07月25日",
+          "dateSort": "2026-07-25",
+          "org": "",
+          "file": "20260725_Certificate_of_Attendance.jpg",
+          "category": "技术转移与跨境合作"
+        },
+        {
+          "display": "深港国际技术经理人培训",
+          "date": "2026年07月25日",
+          "dateSort": "2026-07-25",
+          "org": "",
+          "file": "20260725_Shzhen-Hong Kong Joint Training Program for International Technology Transfer Professionals.jpg",
+          "category": "技术转移与跨境合作"
+        }
+      ],
+      "工程技术认证": [
+        {
+          "display": "工程摄影测量",
+          "date": "2026年07月22日",
+          "dateSort": "2026-07-22",
+          "org": "",
+          "file": "20260722_Engineering_Photogrammetry.png",
+          "category": "工程技术认证"
+        },
+        {
+          "display": "Web × IoT 修了证书",
+          "date": "2022年02月27日",
+          "dateSort": "2022-02-27",
+          "org": "冈山大学",
+          "file": "20220227_OU_Web×IoT修了証.jpg",
+          "category": "工程技术认证"
+        },
+        {
+          "display": "饮用水处理 (TU Delft)",
+          "date": "2021年01月03日",
+          "dateSort": "2021-01-03",
+          "org": "冈山大学",
+          "file": "20210103_OU_TU_Delft_Drinking Water_Treatment.png",
+          "category": "工程技术认证"
+        }
+      ],
+      "高端装备与创新": [
+        {
+          "display": "高端装备创新项目",
+          "date": "2026年07月22日",
+          "dateSort": "2026-07-22",
+          "org": "",
+          "file": "20260722_High-end_Equipment_Innovation_Project.png",
+          "category": "高端装备与创新"
+        }
+      ],
+      "专业技能认证": [
+        {
+          "display": "自动产线安装与调试",
+          "date": "2026年06月23日",
+          "dateSort": "2026-06-23",
+          "org": "",
+          "file": "20260623_Installation & Testing of Automatic Production Line.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "智能产线设计与集成技术",
+          "date": "2026年06月23日",
+          "dateSort": "2026-06-23",
+          "org": "",
+          "file": "20260623_Intelligent Production Line Design and Integration Technology.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "PLC 应用技术",
+          "date": "2026年06月23日",
+          "dateSort": "2026-06-23",
+          "org": "PLC",
+          "file": "20260623_PLC_Application_Technology.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "AI 大模型训练",
+          "date": "2026年06月18日",
+          "dateSort": "2026-06-18",
+          "org": "",
+          "file": "20260618_AI_Large_Model_Trainig.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "Advanced Computer Vision with OpenCV and Python",
+          "date": "2026年02月23日",
+          "dateSort": "2026-02-23",
+          "org": "",
+          "file": "20260223_Advanced Computer Vision with OpenCV and Python .jpg",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "Predict Gender and Age Using OpenCV",
+          "date": "2026年02月23日",
+          "dateSort": "2026-02-23",
+          "org": "",
+          "file": "20260223_Predict the Gender and Age Using OpenCV.jpg",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "Vehicle Counting, Classification & Detection",
+          "date": "2026年02月23日",
+          "dateSort": "2026-02-23",
+          "org": "",
+          "file": "20260223_Vehicle Counting, Classification & Detection using_Computer Vision .jpg",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "AIIII",
+          "date": "2025年10月09日",
+          "dateSort": "2025-10-09",
+          "org": "AIIII",
+          "file": "20251009_AIIII.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "人工智能训练师（高级）",
+          "date": "2025年08月05日",
+          "dateSort": "2025-08-05",
+          "org": "",
+          "file": "20250805_人工智能训练师（高级）.jpg",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "DeepLearning.AI 专项课程",
+          "date": "2021年01月05日",
+          "dateSort": "2021-01-05",
+          "org": "DeepLearning.AI",
+          "file": "20210105_DeepLearning.AI.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "AI入门",
+          "date": "2020年12月27日",
+          "dateSort": "2020-12-27",
+          "org": "冈山大学",
+          "file": "20201227_OU_はじめてのAI.png",
+          "category": "专业技能认证"
+        },
+        {
+          "display": "Python商业数据分析入门",
+          "date": "2020年11月14日",
+          "dateSort": "2020-11-14",
+          "org": "冈山大学",
+          "file": "20201114_OU_Pythonで学ぶビジネスデータ分析入門.png",
+          "category": "专业技能认证"
+        }
+      ],
+      "软技能培训": [
+        {
+          "display": "演讲与口才",
+          "date": "2026年06月17日",
+          "dateSort": "2026-06-17",
+          "org": "",
+          "file": "20260617_Eloquence_and_Speech.png",
+          "category": "软技能培训"
+        }
+      ],
+      "管理培训": [
+        {
+          "display": "OpenEurope Coaching & Mentoring",
+          "date": "2026年06月17日",
+          "dateSort": "2026-06-17",
+          "org": "OpenEurope",
+          "file": "20260617_OpenEurope_Coaching_and_Mentoring.pdf",
+          "category": "管理培训"
+        },
+        {
+          "display": "OpenEurope Collaborative Management",
+          "date": "2026年06月17日",
+          "dateSort": "2026-06-17",
+          "org": "OpenEurope",
+          "file": "20260617_OpenEurope_Collaborative_Management.pdf",
+          "category": "管理培训"
+        },
+        {
+          "display": "OpenEurope Marketing & Planning",
+          "date": "2026年06月17日",
+          "dateSort": "2026-06-17",
+          "org": "OpenEurope",
+          "file": "20260617_OpenEurope_Markrting_Organization_and_Planning.pdf",
+          "category": "管理培训"
+        },
+        {
+          "display": "OpenEurope MBA",
+          "date": "2025年02月16日",
+          "dateSort": "2025-02-16",
+          "org": "OpenEurope",
+          "file": "20250216_OpenEurope_MBA.jpg",
+          "category": "管理培训"
+        }
+      ],
+      "其他": [
+        {
+          "display": "人工智能与社会",
+          "date": "2026年03月06日",
+          "dateSort": "2026-03-06",
+          "org": "",
+          "file": "20260306_Artificial Intelligence and Society.png",
+          "category": "其他"
+        },
+        {
+          "display": "人工智能模型与算法",
+          "date": "2026年03月06日",
+          "dateSort": "2026-03-06",
+          "org": "",
+          "file": "20260306_Artificial Intelligence Models and Algorithms.png",
+          "category": "其他"
+        },
+        {
+          "display": "GKR",
+          "date": "2012年07月30日",
+          "dateSort": "2012-07-30",
+          "org": "GKR",
+          "file": "20120730_GKR.png",
+          "category": "其他"
+        },
+        {
+          "display": "18378",
+          "date": "",
+          "dateSort": "",
+          "org": "",
+          "file": "18378.jpg",
+          "category": "其他"
+        }
+      ],
+      "前沿科技课程": [
+        {
+          "display": "自主智能系统与自动驾驶",
+          "date": "2026年03月06日",
+          "dateSort": "2026-03-06",
+          "org": "",
+          "file": "20260306_Autonomous intelligent systems and self-driving vehicles.png",
+          "category": "前沿科技课程"
+        },
+        {
+          "display": "工业机器人与智能制造",
+          "date": "2026年03月05日",
+          "dateSort": "2026-03-05",
+          "org": "",
+          "file": "20260305_Industrial robots and intelligent manufacturing.png",
+          "category": "前沿科技课程"
+        },
+        {
+          "display": "MIT 计算机科学与编程入门 (Part 2)",
+          "date": "2021年01月04日",
+          "dateSort": "2021-01-04",
+          "org": "冈山大学",
+          "file": "20210104_OU_MIT_コンピュータサイエンスとプログラムミング入門-Part2.png",
+          "category": "前沿科技课程"
+        },
+        {
+          "display": "MIT 计算机科学与编程入门 (Part 1)",
+          "date": "2021年01月03日",
+          "dateSort": "2021-01-03",
+          "org": "冈山大学",
+          "file": "20210103_OU_MIT_コンピュータサイエンスとプログラムミング入門-Part1.png",
+          "category": "前沿科技课程"
+        }
+      ],
+      "一带一路专项课程": [
+        {
+          "display": "国家语言能力与一带一路",
+          "date": "2026年03月05日",
+          "dateSort": "2026-03-05",
+          "org": "",
+          "file": "20260305_National language capabilities for serving the Belt and Road Initiative Construction-Needs, Connotations, and Pathways.png",
+          "category": "一带一路专项课程"
+        },
+        {
+          "display": "人口安全问题与一带一路",
+          "date": "2026年03月05日",
+          "dateSort": "2026-03-05",
+          "org": "",
+          "file": "20260305_Population security issues in the context of the “Belt and Road” Initiative.png",
+          "category": "一带一路专项课程"
+        },
+        {
+          "display": "太空考古与文化遗产保护",
+          "date": "2026年03月05日",
+          "dateSort": "2026-03-05",
+          "org": "",
+          "file": "20260305_Space Archaeology and the Protection of Cultural Heritage along the Belt and Road Initiative.png",
+          "category": "一带一路专项课程"
+        },
+        {
+          "display": "太空减灾与一带一路",
+          "date": "2026年03月05日",
+          "dateSort": "2026-03-05",
+          "org": "",
+          "file": "20260305_Space-based disaster mitigation and scientific responses to disaster mitigation under the Belt and Road Initiative.png",
+          "category": "一带一路专项课程"
+        },
+        {
+          "display": "非传统安全威胁评估与应对",
+          "date": "2026年03月04日",
+          "dateSort": "2026-03-04",
+          "org": "",
+          "file": "20260304_非传统安全威胁评估以及应对.png",
+          "category": "一带一路专项课程"
+        }
+      ],
+      "学术服务": [
+        {
+          "display": "编辑委员会成员",
+          "date": "2026年02月11日",
+          "dateSort": "2026-02-11",
+          "org": "",
+          "file": "20260211_Editoral Board Member.pdf",
+          "category": "学术服务"
+        },
+        {
+          "display": "Nature 同行评审认证",
+          "date": "2025年07月25日",
+          "dateSort": "2025-07-25",
+          "org": "Nature",
+          "file": "20250725_Nature_PeerReview.png",
+          "category": "学术服务"
+        },
+        {
+          "display": "学术桥论文辅导",
+          "date": "2025年03月27日",
+          "dateSort": "2025-03-27",
+          "org": "",
+          "file": "20250327_No.254261_学术桥论文辅导.png",
+          "category": "学术服务"
+        },
+        {
+          "display": "ARCI-2026 审稿人",
+          "date": "",
+          "dateSort": "",
+          "org": "ARCI",
+          "file": "Certificate_Reviewer_ARCI-2026_Shijun Pan.pdf",
+          "category": "学术服务"
+        },
+        {
+          "display": "Science and Engineering 审稿人",
+          "date": "",
+          "dateSort": "",
+          "org": "",
+          "file": "Reviewer of Science and Engineering.jpg",
+          "category": "学术服务"
+        }
+      ],
+      "奖项与荣誉": [
+        {
+          "display": "Highlight Paper",
+          "date": "2024年12月15日",
+          "dateSort": "2024-12-15",
+          "org": "AIIII",
+          "file": "20241215_AIIII_HighLight_Paper.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "Dean's Scientific Award",
+          "date": "2024年09月25日",
+          "dateSort": "2024-09-25",
+          "org": "",
+          "file": "20240925_Certificate of Commendation 2024 Dean's Scientific Award.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "Excellent Work",
+          "date": "2024年06月03日",
+          "dateSort": "2024-06-03",
+          "org": "AIIII",
+          "file": "20240603_AIIII_Excellent_Work.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "Outstanding Discussion (B1)",
+          "date": "2024年03月06日",
+          "dateSort": "2024-03-06",
+          "org": "JSCE (日本土木学会)",
+          "file": "20240306_JSCE_B1_Outstanding_Discussion.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "Potential Award",
+          "date": "2022年12月01日",
+          "dateSort": "2022-12-01",
+          "org": "AIIII",
+          "file": "20221201_AIIII_Potential_Award.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "优秀毕业生",
+          "date": "2016年05月01日",
+          "dateSort": "2016-05-01",
+          "org": "沈阳工业大学",
+          "file": "20160501_SUT_校优秀毕业生.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "三等奖学金",
+          "date": "2014年11月01日",
+          "dateSort": "2014-11-01",
+          "org": "沈阳工业大学",
+          "file": "20141101_SUT_校三年等奖学金.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "优秀学生干部",
+          "date": "2014年11月01日",
+          "dateSort": "2014-11-01",
+          "org": "沈阳工业大学",
+          "file": "20141101_SUT_校优秀学生干部.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "结构设计大赛优秀奖",
+          "date": "2014年05月01日",
+          "dateSort": "2014-05-01",
+          "org": "沈阳工业大学",
+          "file": "20140501_SUT_结构设计大赛优秀奖.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "优秀团员",
+          "date": "2013年11月01日",
+          "dateSort": "2013-11-01",
+          "org": "沈阳工业大学",
+          "file": "20131101_SUT_校优秀团员.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "优秀军训学员",
+          "date": "2012年09月01日",
+          "dateSort": "2012-09-01",
+          "org": "沈阳工业大学",
+          "file": "20120901_SUT_优秀军训学员.jpg",
+          "category": "奖项与荣誉"
+        },
+        {
+          "display": "优秀员工",
+          "date": "",
+          "dateSort": "",
+          "org": "",
+          "file": "优秀员工.pdf",
+          "category": "奖项与荣誉"
+        }
+      ],
+      "学位与学历认证": [
+        {
+          "display": "Ph.D. 博士学位",
+          "date": "2024年10月09日",
+          "dateSort": "2024-10-09",
+          "org": "冈山大学",
+          "file": "20241009_OU_PhD_CSCSE.jpg",
+          "category": "学位与学历认证"
+        },
+        {
+          "display": "硕士学位认证 (留服)",
+          "date": "2021年10月20日",
+          "dateSort": "2021-10-20",
+          "org": "冈山大学",
+          "file": "20211020_OU_MS_CSCSE.jpg",
+          "category": "学位与学历认证"
+        },
+        {
+          "display": "硕士学位",
+          "date": "2021年09月24日",
+          "dateSort": "2021-09-24",
+          "org": "冈山大学",
+          "file": "20210924_OU_MS.jpg",
+          "category": "学位与学历认证"
+        },
+        {
+          "display": "学士学位认证 (留服)",
+          "date": "2016年07月10日",
+          "dateSort": "2016-07-10",
+          "org": "沈阳工业大学",
+          "file": "20160710_SUT_B.E._CSCSE.png",
+          "category": "学位与学历认证"
+        },
+        {
+          "display": "PSH",
+          "date": "2016年06月01日",
+          "dateSort": "2016-06-01",
+          "org": "沈阳工业大学",
+          "file": "20160601_SUT_PSH.jpg",
+          "category": "学位与学历认证"
+        }
+      ],
+      "语言与计算机考试": [
+        {
+          "display": "JLPT N2 (93/180)",
+          "date": "2024年09月18日",
+          "dateSort": "2024-09-18",
+          "org": "JLPT",
+          "file": "20240918_JLPT_N2_93.jpg",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "TOEIC 710分",
+          "date": "2017年11月19日",
+          "dateSort": "2017-11-19",
+          "org": "TOEIC",
+          "file": "20171119_TOEIC_710.jpg",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "CEAC AutoCAD 2012",
+          "date": "2014年09月15日",
+          "dateSort": "2014-09-15",
+          "org": "沈阳工业大学",
+          "file": "20140915_SUT_CEAC.jpg",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "CET-6 大学英语六级",
+          "date": "2013年12月01日",
+          "dateSort": "2013-12-01",
+          "org": "沈阳工业大学",
+          "file": "20131201_SUT_CET6.jpg",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "CET-4 大学英语四级",
+          "date": "2013年06月01日",
+          "dateSort": "2013-06-01",
+          "org": "沈阳工业大学",
+          "file": "20130601_SUT_CET4.jpg",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "全国计算机等级考试二级C",
+          "date": "2013年03月01日",
+          "dateSort": "2013-03-01",
+          "org": "沈阳工业大学",
+          "file": "20130301_SUT_Grade2_C.jpg",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "全国计算机等级考试",
+          "date": "2013年03月",
+          "dateSort": "2013-03",
+          "org": "NCRE",
+          "file": "201303_NCRE.pdf",
+          "category": "语言与计算机考试"
+        },
+        {
+          "display": "国家职业汉语能力测试 (ZHC)",
+          "date": "2012年12月15日",
+          "dateSort": "2012-12-15",
+          "org": "沈阳工业大学",
+          "file": "20121215_SUT_ZHC.jpg",
+          "category": "语言与计算机考试"
+        }
+      ],
+      "研究资助与学术活动": [
+        {
+          "display": "OU-SPRING 博士研究员",
+          "date": "2024年09月10日",
+          "dateSort": "2024-09-10",
+          "org": "冈山大学",
+          "file": "20240910_OU-SPRING 2024 Summer Research Symposium.jpg",
+          "category": "研究资助与学术活动"
+        },
+        {
+          "display": "研究费资助",
+          "date": "2023年12月28日",
+          "dateSort": "2023-12-28",
+          "org": "冈山大学",
+          "file": "20231228_OU_ResearchFee.png",
+          "category": "研究资助与学术活动"
+        },
+        {
+          "display": "Hackathon 参赛",
+          "date": "2021年08月28日",
+          "dateSort": "2021-08-28",
+          "org": "冈山大学",
+          "file": "20210828_OU_Hackthon.jpg",
+          "category": "研究资助与学术活动"
+        }
+      ]
+    }
+  },
+  "profileEN": {
+    "name": "潘是均",
+    "nameEn": "Shijun Pan",
+    "title": "Ph.D. · Researcher · Technology Manager",
+    "institution": "Okayama University",
+    "field": "River Engineering × AI Deep Learning",
+    "location": "Shenzhen · China",
+    "zhihu": "https://www.zhihu.com/people/pannaqlucky",
+    "emails": [
+      "panshj@szarobots.com",
+      "panshj@uestc.edu.cn",
+      "p4b36znn@s.okayama-u.ac.jp"
+    ],
+    "orcid": "0000-0002-3260-9019",
+    "tagline": "Researcher · Technology Manager · Lifelong Learner",
+    "bio": [
+      "Specializing in the intersection of river engineering and AI deep learning, dedicated to applying cutting-edge AI technologies (computer vision, multimodal LLMs, AIGC) to river environment monitoring and management.",
+      "Published 32 journal papers and 15 international conference papers in UAV remote sensing, LiDAR, and deep learning image analysis.",
+      "Also engaged in technology transfer, completed the Shenzhen-Hong Kong International Technology Manager training, focusing on cross-border technology transfer in the Greater Bay Area."
+    ],
+    "education": [
+      {
+        "year": "2024",
+        "degree": "Ph.D.",
+        "school": "Okayama University"
+      },
+      {
+        "year": "2021",
+        "degree": "M.S.",
+        "school": "Okayama University"
+      },
+      {
+        "year": "2016",
+        "degree": "B.E.",
+        "school": "Shenyang University of Technology"
+      }
+    ],
+    "languages": [
+      {
+        "name": "Chinese",
+        "level": "Native",
+        "percent": 100
+      },
+      {
+        "name": "English",
+        "level": "TOEIC 710",
+        "percent": 70
+      },
+      {
+        "name": "Japanese",
+        "level": "JLPT N2 (93/180)",
+        "percent": 60
+      }
+    ],
+    "researchAreas": [
+      {
+        "icon": "🤖",
+        "title": "Deep Learning & Computer Vision",
+        "desc": "YOLOv8, DeepLabV3+, SAM models for river environment; object detection, semantic/instance segmentation"
+      },
+      {
+        "icon": "🛸",
+        "title": "UAV Remote Sensing",
+        "desc": "Low-altitude UAV imagery, LiDAR/ALB-assisted deep learning, multi-platform data fusion"
+      },
+      {
+        "icon": "🌊",
+        "title": "River & Environmental Engineering",
+        "desc": "Riparian land cover classification, riverine waste detection, embankment crack identification, flood evacuation optimization"
+      },
+      {
+        "icon": "🧠",
+        "title": "Multimodal AI & LLMs",
+        "desc": "LLaVA, AIGC image generation, prompt engineering for river monitoring and detection"
+      },
+      {
+        "icon": "📱",
+        "title": "Smartphone Photogrammetry",
+        "desc": "3D model reconstruction via smartphone photogrammetry for AI-assisted crack detection and river spatial analysis"
+      },
+      {
+        "icon": "🌍",
+        "title": "Belt & Road International Cooperation",
+        "desc": "AI+UAV agricultural engineering and disaster management in Tunisia, Bangladesh, and Belt & Road countries"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026",
+        "title": "Belt & Road Expansion",
+        "desc": "Tunisia AI+UAV research, Bangladesh agricultural engineering, mineral processing multimodal AI"
+      },
+      {
+        "date": "2025",
+        "title": "Multimodal AI & LLM Applications",
+        "desc": "LMM prompt engineering, AIGC crack detection, flood evacuation optimization, cross-platform data fusion"
+      },
+      {
+        "date": "2024",
+        "title": "Ph.D. Graduation · Key Achievements",
+        "desc": "Ph.D. degree, multiple Drones/AIIII/JSCE publications, OU-SPRING researcher"
+      },
+      {
+        "date": "2022–2023",
+        "title": "Deep Learning & CV Deepening",
+        "desc": "YOLOv8 instance segmentation, SAM evaluation, AIGC image generation, 4K camera monitoring"
+      },
+      {
+        "date": "2020–2021",
+        "title": "UAV + AI Research Initiation",
+        "desc": "ALB-assisted deep learning, riparian land cover classification, fishway fish detection"
+      }
+    ],
+    "ui": {
+      "nav_about": "About",
+      "nav_research": "Research",
+      "nav_publications": "Publications",
+      "nav_blog": "Blog",
+      "nav_certifications": "Honors & Experience",
+      "nav_contact": "Contact",
+      "lang_switch": "中文",
+      "hero_btn_pub": "Publications",
+      "hero_btn_blog": "Read Blog",
+      "section_about": "About Me",
+      "section_bio": "Biography",
+      "section_education": "Education",
+      "section_languages": "Languages",
+      "section_research": "Research Areas",
+      "section_pub": "Publications",
+      "section_pub_journals": "Journal Papers",
+      "section_pub_conferences": "Conference Papers",
+      "section_pub_stats_journals": "Journal Papers",
+      "section_pub_stats_conferences": "Conference Papers",
+      "section_pub_stats_venues": "Venues Covered",
+      "section_pub_stats_fields": "Research Fields",
+      "section_timeline": "Research Timeline",
+      "section_blog": "Blog",
+      "section_blog_subtitle": "Thoughts on research & technology transfer",
+      "section_cert": "Honors & Experience",
+      "section_contact": "Contact",
+      "footer_quicklinks": "Quick Links",
+      "footer_pub": "Publications",
+      "footer_blog": "Blog",
+      "footer_cert": "Honors",
+      "footer_zhihu": "Zhihu Profile",
+      "blog_back": "← Back to Blog",
+      "cert_cat_labels": {
+        "学位与学历认证": "Degrees & Credentials",
+        "奖项与荣誉": "Awards & Honors",
+        "研究资助与学术活动": "Research Grants & Activities",
+        "学术服务": "Academic Service",
+        "语言与计算机考试": "Language & Computer Exams",
+        "专业技能认证": "Professional Certifications",
+        "管理培训": "Management Training",
+        "一带一路专项课程": "Belt & Road Courses",
+        "前沿科技课程": "Cutting-Edge Tech Courses",
+        "工程技术认证": "Engineering Certifications",
+        "高端装备与创新": "Advanced Equipment & Innovation",
+        "软技能培训": "Soft Skills Training",
+        "技术转移与跨境合作": "Tech Transfer & Cross-border",
+        "其他": "Other"
+      }
+    },
     "certifications": {
       "技术转移与跨境合作": [
         {
@@ -1122,5 +1868,5 @@ window.SITE_DATA = {
       }
     ]
   },
-  "generatedAt": "2026-07-30T05:03:29.776Z"
+  "generatedAt": "2026-07-30T05:11:52.596Z"
 };

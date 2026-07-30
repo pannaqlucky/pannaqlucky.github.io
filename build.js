@@ -347,13 +347,21 @@ function scanCertifications(certDir) {
 function main() {
   console.log('🔧 正在构建网站数据...\n');
 
-  let profile, blog, zhihu = [];
+  let profile, profileEN, blog, zhihu = [];
   try {
     profile = readJSON(path.join(ROOT, 'data', 'profile.json'));
     console.log('✓ 已读取 data/profile.json');
   } catch (e) {
     console.error('✗ 读取 data/profile.json 失败:', e.message);
     process.exit(1);
+  }
+
+  try {
+    profileEN = readJSON(path.join(ROOT, 'data', 'profile.en.json'));
+    console.log('✓ 已读取 data/profile.en.json (English)');
+  } catch (e) {
+    console.log('⚠ 未找到 data/profile.en.json, 英文版使用中文数据');
+    profileEN = profile;
   }
 
   try {
@@ -384,9 +392,11 @@ function main() {
 
   // Override profile.certifications with auto-generated data
   profile.certifications = certifications.categories;
+  profileEN.certifications = certifications.categories;
 
   const data = {
     profile,
+    profileEN,
     blog,
     zhihu,
     publications,

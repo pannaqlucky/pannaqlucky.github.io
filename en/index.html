@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="潘是均 (Shijun Pan) — 科研工作者 · 技术经理人 · 终身学习者。Okayama University 博士，专注AI深度学习与河川工程交叉研究。">
-  <title>潘是均 (Shijun Pan) | 个人主页</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Shijun Pan — Researcher · Technology Manager · Lifelong Learner. Ph.D. from Okayama University, specializing in AI deep learning and river engineering.">
+  <title>Shijun Pan | Personal Website</title>
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,15 +13,7 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="#home" class="nav-logo">Shijun Pan</a>
-      <ul class="nav-links">
-        <li><a href="#about">关于</a></li>
-        <li><a href="#research">研究方向</a></li>
-        <li><a href="#publications">论文发表</a></li>
-        <li><a href="#blog">博客</a></li>
-        <li><a href="#certifications">荣誉与经历</a></li>
-        <li><a href="en/">EN</a></li>
-        <li><a href="#contact">联系</a></li>
-      </ul>
+      <ul class="nav-links" id="navLinks"></ul>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,7 +28,7 @@
   <!-- About -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">关于我</h2>
+      <h2 class="section-title" id="aboutTitle"></h2>
       <div class="about-grid" id="aboutContent"></div>
     </div>
   </section>
@@ -44,7 +36,7 @@
   <!-- Research -->
   <section id="research" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">研究方向</h2>
+      <h2 class="section-title" id="researchTitle"></h2>
       <div class="research-grid" id="researchContent"></div>
     </div>
   </section>
@@ -52,7 +44,7 @@
   <!-- Publications -->
   <section id="publications" class="section">
     <div class="container">
-      <h2 class="section-title">论文发表</h2>
+      <h2 class="section-title" id="pubTitle"></h2>
       <div class="pub-stats" id="pubStats"></div>
       <div class="pub-tabs" id="pubTabs"></div>
       <div class="pub-list" id="journalsList"></div>
@@ -63,7 +55,7 @@
   <!-- Timeline -->
   <section id="timeline" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">研究时间线</h2>
+      <h2 class="section-title" id="timelineTitle"></h2>
       <div class="tl-vertical" id="timelineContent"></div>
     </div>
   </section>
@@ -71,13 +63,13 @@
   <!-- Blog -->
   <section id="blog" class="section">
     <div class="container">
-      <h2 class="section-title">博客文章</h2>
-      <p class="section-subtitle">学术研究与技术转移相关思考</p>
+      <h2 class="section-title" id="blogTitle"></h2>
+      <p class="section-subtitle" id="blogSubtitle"></p>
       <div class="blog-grid" id="blogGrid"></div>
     </div>
   </section>
 
-  <!-- Blog Article Detail (hidden by default) -->
+  <!-- Blog Article Detail -->
   <section id="blog-display" class="section" style="display:none">
     <div class="container">
       <div id="blogContent" class="blog-article"></div>
@@ -87,7 +79,7 @@
   <!-- Certifications -->
   <section id="certifications" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">证书与荣誉</h2>
+      <h2 class="section-title" id="certTitle"></h2>
       <div class="cert-cats" id="certContent"></div>
     </div>
   </section>
@@ -97,13 +89,12 @@
     <div class="container">
       <div class="footer-grid" id="footerContent"></div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Shijun Pan. All rights reserved. 由 <code>node build.js</code> 驱动更新。</p>
+        <p>&copy; 2026 Shijun Pan. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- 数据文件（由 build.js 自动生成） -->
-  <script src="data.js"></script>
-  <script src="script.js"></script>
+  <script src="../data.js"></script>
+  <script src="en-script.js"></script>
 </body>
 </html>
