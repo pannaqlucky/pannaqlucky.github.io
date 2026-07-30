@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="潘是均 (Shijun Pan) — 科研工作者 · 技术经理人 · 终身学习者。Okayama University 博士，专注AI深度学习与河川工程交叉研究。">
+  <title>潘是均 (Shijun Pan) | 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">Shijun Pan</a>
+      <ul class="nav-links">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#research">研究方向</a></li>
+        <li><a href="#publications">论文发表</a></li>
+        <li><a href="#blog">博客</a></li>
+        <li><a href="#certifications">证书与荣誉</a></li>
+        <li><a href="#gallery">证书图集</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner" id="heroContent"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid" id="aboutContent"></div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">研究方向</h2>
+      <div class="research-grid" id="researchContent"></div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title">论文发表</h2>
+      <div class="pub-stats" id="pubStats"></div>
+      <div class="pub-tabs" id="pubTabs"></div>
+      <div class="pub-list" id="journalsList"></div>
+      <div class="pub-list hidden" id="conferencesList"></div>
+      <p class="text-center" style="margin-top:2rem;color:var(--color-text-muted);font-size:0.85rem;">
+        提示：将新的 PDF 论文放入 <strong>Journals/</strong> 或 <strong>Conferences/</strong> 文件夹，运行 <code>node build.js</code> 即可更新此列表。
+      </p>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">研究时间线</h2>
+      <div class="tl-vertical" id="timelineContent"></div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2 class="section-title">博客文章</h2>
+      <p class="section-subtitle">学术研究与技术转移相关思考</p>
+      <div class="blog-grid" id="blogGrid"></div>
+      <p class="text-center" style="margin-top:2rem;color:var(--color-text-muted);font-size:0.85rem;">
+        提示：编辑 <strong>data/blog.json</strong> 添加新文章，运行 <code>node build.js</code> 即可更新。
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Article Detail (hidden by default) -->
+  <section id="blog-display" class="section" style="display:none">
+    <div class="container">
+      <div id="blogContent" class="blog-article"></div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">证书与荣誉</h2>
+      <div class="cert-cats" id="certContent"></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">证书图集</h2>
+      <p class="section-subtitle">扫描自 <strong>Certifications & Awards/</strong> 文件夹</p>
+      <div class="gallery-grid" id="galleryContent"></div>
+      <p class="text-center" style="margin-top:2rem;color:var(--color-text-muted);font-size:0.85rem;">
+        提示：将新证书图片放入 <strong>Certifications & Awards/</strong> 文件夹，运行 <code>node build.js</code> 即可更新。
+      </p>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid" id="footerContent"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shijun Pan. All rights reserved. 由 <code>node build.js</code> 驱动更新。</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 数据文件（由 build.js 自动生成） -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

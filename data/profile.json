@@ -1,0 +1,76 @@
+{
+  "name": "潘是均",
+  "nameEn": "Shijun Pan",
+  "title": "Ph.D. · 科研工作者 · 技术经理人",
+  "institution": "冈山大学 (Okayama University)",
+  "field": "河川工学 × AI 深度学习",
+  "location": "深圳 · 中国",
+  "email": "research@example.com",
+  "orcid": "0000-0000-0000-0000",
+  "tagline": "科研工作者 · 技术经理人 · 终身学习者",
+  "bio": [
+    "专注于河川工程与人工智能深度学习交叉研究，致力于将前沿AI技术（计算机视觉、多模态大模型、AIGC）应用于河流环境监测与管理。",
+    "在无人机遥感、LiDAR、深度学习图像分析领域发表学术论文32篇期刊论文及15篇国际会议论文。",
+    "同时深耕技术转移领域，完成深港国际技术经理人培训，关注粤港澳大湾区科技创新合作与跨境技术转移。"
+  ],
+  "education": [
+    { "year": "2024", "degree": "博士 (Ph.D.)", "school": "冈山大学 (Okayama University)" },
+    { "year": "2021", "degree": "硕士", "school": "冈山大学 (Okayama University)" },
+    { "year": "2016", "degree": "学士", "school": "沈阳工业大学 (Shenyang University of Technology)" }
+  ],
+  "languages": [
+    { "name": "中文", "level": "母语", "percent": 100 },
+    { "name": "英语", "level": "TOEIC 710", "percent": 70 },
+    { "name": "日语", "level": "JLPT N2 (93/180)", "percent": 60 }
+  ],
+  "researchAreas": [
+    { "icon": "🤖", "title": "深度学习与计算机视觉", "desc": "YOLOv8、DeepLabV3+、SAM等模型的河道环境应用；目标检测、语义分割、实例分割" },
+    { "icon": "🛸", "title": "无人机遥感技术", "desc": "低空无人机 (UAV) 影像采集、LiDAR/ALB辅助深度学习、多平台数据融合" },
+    { "icon": "🌊", "title": "河川环境工程", "desc": "河岸土地利用分类、河道垃圾检测、堤岸裂缝识别、洪水疏散路径优化" },
+    { "icon": "🧠", "title": "多模态AI与大模型", "desc": "LLaVA、AIGC图像生成、Prompt Engineering辅助河道监测与检测" },
+    { "icon": "📱", "title": "智能手机摄影测量", "desc": "基于手机摄影测量的3D模型重建，辅助AI裂缝检测与河道空间分析" },
+    { "icon": "🌍", "title": "一带一路国际合作", "desc": "突尼斯、孟加拉国等沿线国家的AI+无人机农业工程与灾害管理应用" }
+  ],
+  "timeline": [
+    { "date": "2026", "title": "一带一路扩展研究", "desc": "突尼斯AI+无人机研究、孟加拉国农业工程应用、矿物加工多模态AI" },
+    { "date": "2025", "title": "多模态AI与大模型应用", "desc": "LMM Prompt工程、AIGC裂缝检测、洪水疏散优化、跨平台数据融合" },
+    { "date": "2024", "title": "博士毕业 · 成果丰硕", "desc": "获博士学位、发表多篇Drones/AIIII/JSCE论文、OU-SPRING研究员" },
+    { "date": "2022-2023", "title": "深度学习与计算机视觉深化", "desc": "YOLOv8实例分割、SAM模型评估、AIGC图像生成应用、4K摄像监测" },
+    { "date": "2020-2021", "title": "无人机+AI研究起步", "desc": "ALB辅助深度学习、河岸土地覆盖分类、鱼道鱼类检测" }
+  ],
+  "certifications": {
+    "academic": [
+      "Dean's Scientific Award 2024 — 冈山大学",
+      "AIIII Highlight Paper 2024",
+      "OU-SPRING 博士研究员 (2024)",
+      "JSCE B1 Outstanding Discussion (2024)",
+      "AIIII Excellent Work (2024)",
+      "AIIII Potential Award (2022)"
+    ],
+    "professional": [
+      "深港国际技术经理人 (2026)",
+      "人工智能训练师（高级）(2025)",
+      "Nature Peer Review 审稿人认证 (2025)",
+      "OpenEurope MBA (2025)",
+      "OpenCV 高级计算机视觉 (2026)",
+      "AI大模型训练 (2026)",
+      "PLC应用技术 (2026)",
+      "自主智能系统与自动驾驶 (2026)"
+    ],
+    "international": [
+      "JLPT N2 日本语能力考试",
+      "TOEIC 710 分",
+      "Nature 同行评审认证",
+      "ARCI-2026 审稿人",
+      "期刊编辑委员会成员 (2026)",
+      "OpenEurope 多门管理课程认证"
+    ],
+    "online": [
+      "DeepLearning.AI 专项课程",
+      "MIT Computer Science (冈山大学联合课程)",
+      "TU Delft Drinking Water Treatment",
+      "一带一路太空减灾与考古课程",
+      "学术桥论文辅导 (2025)"
+    ]
+  }
+}
