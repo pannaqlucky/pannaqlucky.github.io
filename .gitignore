@@ -3,4 +3,5 @@ node_modules/
 Thumbs.db
 *.log
 dist/
-Certifications & Awards/
+Certifications & Awards/*
+!Certifications & Awards/Certifications & Awards.docx
