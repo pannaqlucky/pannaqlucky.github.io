@@ -258,12 +258,24 @@ function hideArticle() {
 // ===== Certifications =====
 (function renderCerts() {
   const certs = D().profile.certifications || {};
-  const catNames = { academic: '🏆 学术荣誉', professional: '🎓 专业认证', international: '🌐 国际能力', online: '📚 在线学习' };
+  const catIcons = {
+    '学位与学历认证': '🎓', '奖项与荣誉': '🏆', '研究资助与学术活动': '🔬',
+    '学术服务': '📝', '语言与计算机考试': '💻', '专业技能认证': '⚙️',
+    '管理培训': '📊', '一带一路专项课程': '🌍', '前沿科技课程': '🚀',
+    '工程技术认证': '🔧', '高端装备与创新': '🏭', '软技能培训': '🗣️',
+    '技术转移与跨境合作': '🤝', '其他': '📌'
+  };
 
-  document.getElementById('certContent').innerHTML = Object.entries(certs).map(([key, items]) => `
+  const entries = Object.entries(certs);
+  if (entries.length === 0) {
+    document.getElementById('certContent').innerHTML = '<p class="text-center" style="color:var(--color-text-muted);">暂无证书数据。将文件放入 <strong>Certifications & Awards/</strong> 文件夹，运行 <code>node build.js</code> 即可显示。</p>';
+    return;
+  }
+
+  document.getElementById('certContent').innerHTML = entries.map(([cat, items]) => `
     <div class="cert-cat">
-      <h3>${catNames[key] || key}</h3>
-      <ul>${items.map(i => `<li>${i}</li>`).join('')}</ul>
+      <h3>${catIcons[cat] || ''} ${cat} <span style="font-size:0.8rem;color:var(--color-text-muted);font-weight:400;">(${items.length}项)</span></h3>
+      <ul>${items.map(i => `<li>${i.date ? '<small style="color:var(--color-primary);margin-right:6px;">[' + i.date + ']</small>' : ''}${i.display}${i.org ? ' <span style="color:var(--color-text-muted);">— ' + i.org + '</span>' : ''}</li>`).join('')}</ul>
     </div>
   `).join('');
 })();
